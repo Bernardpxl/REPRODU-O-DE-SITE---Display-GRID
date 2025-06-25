@@ -1,6 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 90px 1fr;
+  overflow: hidden;
 }
 
 #calango {
@@ -41,7 +42,6 @@ body {
 
 .txt2{
   text-align: center;
-  top: 7vh;
 }
 .img-item:hover {
   flex-grow: 7;
