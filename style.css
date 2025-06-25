@@ -9,21 +9,15 @@ body {
     vertical-align: middle;
 }
 
-.menu-icon {
-  width: 35px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.menu-image img {
+  width: 40px; /* Tamanho do ícone */
+  height: auto;
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.menu-icon span {
-  display: block;
-  height: 4px;
-  background-color: #333;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+.menu-image img:hover {
+  transform: scale(1.1); /* Efeito ao passar o mouse */
 }
 #calango {
   background-image: url(5.jpg.webp);
