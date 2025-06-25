@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 .menu{
-  background: rgb(0, 0, 0, 0.5);
+    background: black;
     height: 99px;
     vertical-align: middle;
 }
