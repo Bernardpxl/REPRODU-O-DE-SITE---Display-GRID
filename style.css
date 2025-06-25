@@ -1,0 +1,90 @@
+body {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+}
+
+#calango {
+  background-image: url(5.jpg.webp);
+  flex-grow: 7;
+  order: -1;
+}
+
+#mulher {
+  background-image: url(1.jpg.webp);
+}
+
+#cachorro {
+  background-image: url(2.jpg.webp);
+}
+
+#mar {
+  background-image: url(3.jpg.webp);
+}
+
+#carro {
+  background-image: url(4.jpg.webp);
+}
+
+#imagens {
+  display: flex;
+  height: 100vh;
+}
+
+.img-item {
+  flex-grow: 1;
+  background-size: cover;
+  background-position: 20% 0;
+  transition: 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.txt2{
+  text-align: center;
+  top: 7vh;
+}
+.img-item:hover {
+  flex-grow: 7;
+}
+.img5{
+  border-radius: 50%
+}
+
+.img-item:hover~#calango {
+  flex-grow: 1;
+}
+.txt1{
+  font-size: 11px;
+  background-color: white;
+  width: 80px;
+  height: 25px;
+  align-items: center;
+  color: blue;
+
+}
+
+.text {
+  position: absolute;
+  text-wrap: nowrap;
+  bottom: 35%;
+  left: 5%;
+  opacity: 0;
+  transition: 0.4s;
+  color: white;
+  font-size: 25px;
+}
+
+.img-item:hover .text {
+  opacity: 1;
+  bottom: 10%;
+}
+
+#calango .text {
+  bottom: 10%;
+  opacity: 1;
+}
+
+.img-item:hover~#calango .text {
+  opacity: 0;
+  bottom: 35%;
+}
