@@ -33,39 +33,59 @@ body {
 
 #imagens {
   display: flex;
-  height: 100vh;
+  height: 105vh;
 }
 
 .img-item {
   flex-grow: 1;
   background-size: cover;
-  background-position: 20% 0;
+  background-position: 10% 0;
+ 
   transition: 0.4s;
   overflow: hidden;
   position: relative;
 }
 
+.descri{
+  position: relative; 
+  top: 180px;
+  font-size: 65px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .txt2{
-  text-align: center;
+	width: 60px;
+	height: 60px;
+  margin-left: 15%;
+  position: relative;
+  top: 85px;
+	border-radius: 50%;
+	margin-right: 10px;
 }
 .img-item:hover {
   flex-grow: 7;
 }
 .img5{
-  border-radius: 50%
+  border-radius: 50%;
+  position: relative; 
+  top: 160px;
 }
 
 .img-item:hover~#calango {
   flex-grow: 1;
 }
 .txt1{
-  font-size: 11px;
-  background-color: white;
-  width: 80px;
-  height: 25px;
-  align-items: center;
-  color: blue;
-
+	display: inline-block;
+	padding: 4px 20px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #2916e0;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 2px;
+	background: #fff;
+  position: relative; 
+  top: 220px;
 }
 
 .text {
