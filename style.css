@@ -4,10 +4,11 @@ body {
   overflow: hidden;
 }
 .menu{
-    background: black;
+  background: black;
     height: 99px;
     vertical-align: middle;
 }
+
 #calango {
   background-image: url(5.jpg.webp);
   flex-grow: 7;
