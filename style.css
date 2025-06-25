@@ -2,6 +2,10 @@ body {
   display: grid;
   grid-template-columns: 90px 1fr;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .menu{
   background: black;
