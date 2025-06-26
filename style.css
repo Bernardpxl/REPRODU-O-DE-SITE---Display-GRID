@@ -10,21 +10,8 @@ body {
 }
 
 
-.menu-icon {
-  width: 35px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.menu-icon span {
-  display: block;
-  height: 4px;
-  background-color: #333;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+.menu-image {
+  margin-top: 150px; 
 }
 #calango {
   background-image: url(5.jpg.webp);
