@@ -9,9 +9,14 @@ body {
     vertical-align: middle;
 }
 
-
 .menu-image {
-  margin-top: 30px; 
+  margin-top: 150px; /* ajusta a posição vertical */
+}
+
+.menu-image img {
+  width: 40px;       /* tamanho do ícone */
+  height: auto;
+  cursor: pointer;
 }
 #calango {
   background-image: url(5.jpg.webp);
