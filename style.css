@@ -1,41 +1,42 @@
-body {
+*{margin: 0;
+  box-sizing: border-box;
+  }
+
+body{
   display: grid;
   grid-template-columns: 90px 1fr;
   overflow: hidden;
-}
-.menu1{
-  background: black;
-    height: 99px;
-    vertical-align: middle;
+  margin-left: -5px;
 }
 
-.sidebar {
-  width: 70px;
-  background-color: #111;
+#menu-toggle {
+  display: none;
+}
+
+.social {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
+  margin-top: 80%;
 }
 
-menu {
-  font-size: 24px;
-  color: white;
+.social svg {
+  margin-top: 20px;
+  height: 70px;
+  width: 22px;
   cursor: pointer;
 }
 
-.sidebar .social-icons {
+.menu {
+  background-color: #0f0f0f;
+  height: 90px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.sidebar .social-icons a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
+
 
 #calango {
   background-image: url(5.jpg.webp);
@@ -61,14 +62,14 @@ menu {
 
 #imagens {
   display: flex;
-  height: 105vh;
+  height: 120vh;
 }
 
 .img-item {
   flex-grow: 1;
   background-size: cover;
-  background-position: 10% 0;
- 
+  background-position: 41% 0;
+  opacity: 99%;
   transition: 0.4s;
   overflow: hidden;
   position: relative;
@@ -76,44 +77,47 @@ menu {
 
 .descri{
   position: relative; 
-  top: 180px;
-  font-size: 65px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  top: -13vh;
+  font-size: 60px;
+font-family: initial;
 }
 
 .txt2{
-	width: 60px;
-	height: 60px;
+  width: 60px;
+  height: 60px;
   margin-left: 15%;
+  top: -16vh;
   position: relative;
-  top: 85px;
-	border-radius: 50%;
-	margin-right: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 .img-item:hover {
-  flex-grow: 7;
+  flex-grow: 11;
 }
 .img5{
   border-radius: 50%;
   position: relative; 
-  top: 160px;
+  top: -10vh;
 }
 
 .img-item:hover~#calango {
   flex-grow: 1;
 }
+.img-item:hover~#mulher {
+  flex-grow: 1;
+}
 .txt1{
-	display: inline-block;
-	padding: 4px 20px;
-	margin-bottom: 10px;
-	font-size: 12px;
-	color: #2916e0;
-	text-transform: uppercase;
-	font-weight: 600;
-	border-radius: 2px;
-	background: #fff;
-  position: relative; 
-  top: 220px;
+  display: inline-block;
+  padding: 4px 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #2916e0;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2px;
+  background: #fff;
+  position: relative;
+  top: -15vh;
 }
 
 .text {
@@ -140,4 +144,286 @@ menu {
 .img-item:hover~#calango .text {
   opacity: 0;
   bottom: 35%;
+}
+
+#menu-toggle{
+  display: none;
+}
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 15%;
+  height: 100vh;
+  background-color: white;
+  transition: left 0.3s ease;
+  padding: 40px 20px;
+  z-index: 9;
+  text-align: center;
+}
+
+#menu-toggle:checked~.side-nav {
+  left: 0.1%;
+  z-index: 99;
+}
+
+.voltar-btn {
+  display: flex;
+  width: fit-content;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 20px auto;
+  margin-bottom: 140px;
+}
+
+
+.voltar-btn .seta {
+  background-color: #111;
+  color: white;
+  padding: 20px 35px;
+  padding-top: 25px;
+  padding-left: 10%;
+}
+
+.voltar-btn .logo {
+  background-color: #2100F5;
+  color: white;
+  padding: 20px 35px;
+  margin-left: -5%;
+}
+
+.side-nav h2 {
+  color: #2300ff;
+  letter-spacing: 4px;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin: 25px 0;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  transition: 0.3s;
+}
+
+.side-nav ul li a:hover,
+.side-nav ul li a.active {
+  color: #2300ff;
+}
+
+.social2{
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 70px;
+  color: #777;
+}
+
+.side-nav footer {
+  margin-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  margin-left: -9%;
+  font-size: 1rem;
+  color: #777;
+}
+
+.side-nav footer span {
+  color: red;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.nav2 ul{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.nav2 h1{
+  margin-left: 15%;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.nav2 li{
+  margin: 40px 30px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4,1fr);
+  gap: 10px;
+}
+
+.item {
+  overflow: hidden;
+  object-fit: center;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item2 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item3 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item4 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item5 {
+  grid-column: 3 / 5;
+  grid-row: 2/4;
+}
+
+.item6 {
+  grid-column: span 2;
+  grid-row: span 1;
+  
+}
+
+.item7 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item8 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item10 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  height: 110vh;
+}
+
+.item-blog {
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.item-blog img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item1-b {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.item3-b {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.item4-b {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item5-b {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.item6-b {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item9-b {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.item10-b {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item11-b {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.item13-b {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item14-b {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+
+.tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: white;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 3px;
 }
