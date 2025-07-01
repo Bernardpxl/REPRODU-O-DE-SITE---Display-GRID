@@ -6,8 +6,7 @@ body{
   display: grid;
   grid-template-columns: 90px 1fr;
   overflow: hidden;
-  margin-left: 20px;
-  width: 80%;
+  margin-left: -5px;
 }
 
 #menu-toggle {
