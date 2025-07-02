@@ -271,12 +271,25 @@ font-family: initial;
   font-weight: 600;
 }
 
-.nav2 li{
-  margin: 40px 30px;
-  text-transform: uppercase;
-  margin-top: 35px;
-  font-size: 0.8rem;
-  font-weight: 500;
+.nav2 li {
+    height: 50px;
+}
+.nav2 a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.nav2 li.active { 
+    color: #2916e0; 
+} 
+.nav2 li:hover {
+    color: #2916e0;
 }
 
 
