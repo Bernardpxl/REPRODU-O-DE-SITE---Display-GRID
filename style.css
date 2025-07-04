@@ -66,6 +66,7 @@ body{
 #imagens {
   display: flex;
   height: 120vh;
+ background-blend-mode: multiply;
 }
 
 .img-item {
